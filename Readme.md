@@ -1,4 +1,4 @@
-# EV Charging Insights Chatbot
+# Saathi.EV - EV Charging Insights Chatbot
 
 ## Overview
 An AI-driven WhatsApp chatbot that helps EV users find nearby charging stations, check availability, and plan optimal routes.
@@ -8,6 +8,9 @@ An AI-driven WhatsApp chatbot that helps EV users find nearby charging stations,
 - ⚡ **Check Availability** - View real-time charger availability and wait times.
 - 🗺 **Route Planning** - Get optimized charging stops for long trips.
 - 🔌 **Charger Type Info** - Know whether a station has fast or slow chargers.
+- 🔹 **Integration with real-time charging station databases** - Access the latest charging station updates.
+- 🔹 **AI-driven personalized journey recommendations** - Get tailored route suggestions based on your travel needs.
+- 🔹 **Multi-language support** - Communicate in your preferred language.
 
 ## Tech Stack
 - **Backend:** FastAPI
@@ -52,26 +55,33 @@ Use the generated `https://your-ngrok-url/webhook` in Twilio settings.
 | POST | `/whatsapp` | Processes user queries and sends responses |
 
 ## Sample Chatbot Interactions
-**User:** Find EV Charger near me
-**Bot:** Please share your city name (e.g., "Delhi")
+### 🔍 Finding EV Chargers
+**User:** Find EV Charger near me  
+**Saath.EV:** Please share your city name (e.g., "Delhi")
 
-**User:** Delhi
-**Bot:** 🔋 EV Charging Stations in Delhi:
-- Station A - Connaught Place
-- Station B - Saket
+**User:** Delhi  
+**Saath.EV:** 🔋 EV Charging Stations in Delhi:  
+- Station A - Connaught Place  
+- Station B - Saket  
 
-**User:** Mumbai
-**Bot:** 🔋 EV Charging Stations in Mumbai:
-- Station C - Bandra
-- Station D - Navi Mumbai
+**User:** Mumbai  
+**Saath.EV:** 🔋 EV Charging Stations in Mumbai:  
+- Station C - Bandra  
+- Station D - Navi Mumbai  
 
-**User:** What chargers are available?
-**Bot:** Our stations support Fast & Slow chargers. Type a city name to check locations.
+### ⏳ Checking Charger Availability
+**User:** Is there an available charger in Bandra?
+**Saath.EV:** Checking real-time data... ✅ Fast Charger available at Station C - Bandra.
 
-## Future Enhancements
-- 🔹 Integration with real-time charging station databases
-- 🔹 AI-driven personalized journey recommendations
-- 🔹 Multi-language support
+### 🛣 Route Planning
+**User:** Plan my route from Delhi to Agra
+**Saath.EV:** 🔋 Recommended charging stops:
+1️⃣ Station A - Connaught Place (Fast Charger)  
+2️⃣ Station X - Mathura (Superfast Charger)  
+
+### 🌍 Multi-language Support
+**User:** चार्जिंग स्टेशन कहाँ है? (Where is the charging station?)
+**Saath.EV:** कृपया अपना शहर का नाम भेजें (e.g., "दिल्ली").
 
 🚀 **Contribute & Star this Repo!**
 
